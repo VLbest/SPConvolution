@@ -26,7 +26,7 @@ function [smFilteredImg] = deleteFalseBorders (img, dsp)
     smFilteredImg = 0;
     for x = 1 + dsp: size(img,"c") - dsp
         for y = 1 + dsp: size(img,"r") - dsp
-            smFilteredImg(y,x)  = img(dsp,dsp);
+            smFilteredImg(y,x)  = img(x,y);
         end
     end
 endfunction

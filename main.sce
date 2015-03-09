@@ -20,9 +20,6 @@ contrast = 7;
 
 //  image, filter matrix, contrast normalisation
 resultImg = applyFilter(img, mask, contrast);
-
-
-
 display_gray(img);
 scf;
 display_gray(resultImg);
